@@ -23,9 +23,9 @@ def format_single_linter_file(file_path: str, errors: [dict]) -> dict:
 
 def format_linter_report(linter_report: dict) -> list:
     new_format = {
-    "error": [],
-    "path": linter_report["path"],
-    "status": linter_report["status"]
+        "error": [],
+        "path": linter_report["path"],
+        "status": linter_report["status"]
     }
 
     if new_format["status"] == "failed":
